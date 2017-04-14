@@ -1,7 +1,234 @@
-<!DOCTYPE html>
+
+
 <html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+<head>
+
+<title>Online Grocery shopping</title>
+<link rel="shortcut icon" href="favicon.ico" >
+<style>
+
+body { 
+  
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+	background-size:cover;
+	}
+hr{ 
+  height: 40px; 
+  border-style: solid; 
+  border-color: #008080; 
+  border-width: 10px 0 0 0; 
+  border-radius: 20px; 
+} 
+
+
+#head{
+background-color: #008080;
+}
+h1{font-weight: bold;
+font-style: oblique;
+font-family: "Times New Roman";
+color: white;
+  
+    text-align: center;
+    display: inline-block;
+    font-size: 30px;
+
+}
+#i1:hover {
+    -webkit-filter: blur(5px); 
+    filter: blur(5px);
+}
+
+#fruits {
+
+  width: 40%;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 25px;
+
+}
+
+#container {
+  text-align: center;
+  padding: 10px 20px;
+}
+#household {
+
+  width: 40%;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 25px;
+
+}
+
+#container3 {
+  text-align: center;
+  padding: 10px 20px;
+}
+
+#veg {
+
+  width: 40%;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 25px;
+
+}
+
+#container2 {
+  text-align: center;
+  padding: 10px 20px;
+}
+#staples {
+
+  width: 40%;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);  margin-bottom: 25px;
+}
+
+#container4 {
+  text-align: center;
+  padding: 10px 20px;
+}
+#Login{
+    border: none;
+    color: white;
+    padding: 14px 28px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+	margin: 90px;
+}
+
+#signup{
+    border: none;
+    color: white;
+    padding: 14px 28px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+	margin: 90px;
+}
+
+#ContactUs{
+    border: none;
+    color: white;
+    padding: 14px 28px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+	margin: 90px;
+}
+
+#MyCart{
+    border: none;
+    color: white;
+    padding: 14px 28px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+	margin: 90px;
+}
+
+#Login {background-color: #4CAF50;} 
+#Login:hover {background-color: #46a049;}
+
+#signup {background-color: #2196F3;} 
+#signup:hover {background: #0b7dda;}
+
+#MyCart {background-color: #ff9800;} 
+#MyCart:hover {background: #e68a00;}
+
+#ContactUs {background-color: #f44336;}
+#ContactUs:hover {background: #da190b;}
+
+
+</style>
+<script>
+
+
+
+
+function startTime() {
+    var today = new Date();
+    var h = today.getHours();
+    var m = today.getMinutes();
+    var s = today.getSeconds();
+    m = checkTime(m);
+    s = checkTime(s);
+    document.getElementById('txt').innerHTML =
+    h + ":" + m + ":" + s;
+    var t = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+    if (i < 10) {i = "0" + i};  
+    return i;
+}
+</script>
+
+</head>
+<body background="groc.jpg" onload="startTime()">
+<div id="head">
+  <h1>Online Grocery Shopping</h1>
+</div>
+
+<a href="form.html"><button id="Login">Login</button></a>
+<a href="signup.html"><button id="signup">Signup</button></a>
+<a href="contactus.html"><button id="ContactUs">Contact Us</button></a>
+<button id="MyCart">My Cart</button>
+
+<hr>
+<br>
+<p>
+<p>
+<p>
+<p>
+<div id="fruits">
+<a href="page1.html">
+  <img id=i1 src="f.jpg" alt="Norway" width="100%">
+</a> 
+ <div id="container">
+    <p>Fruits</p>
+  </div>
+</div>
+
+<div id="veg">
+<a href="page2.html">  
+<img id=i1 src="v.jpg" alt="Norway" style="width:100%">
+</a> 
+ <div id="container2">
+    <p>Vegetables</p>
+  </div>
+</div>
+
+<div id="household">
+<a href="page3.html"> 
+ <img id=i1 src="h.jpg" alt="Norway" width="100%">
+</a>
+  <div id="container3">
+    <p>Household</p>
+  </div>
+</div>
+
+<div id="staples">
+<a href="page4.html">
+  <img id=i1 src="s.jpg" alt="Norway" style="width:100%">
+</a> 
+ <div id="container4">
+    <p>Staples</p>
+  </div>
+</div>
+
+
+
+
+
+
+
 </body>
 </html>
